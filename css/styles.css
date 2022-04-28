@@ -1,0 +1,386 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+  
+}
+header {
+    background-image: url(../images/snowfall.jpeg);
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    border-bottom: 2px dotted pink;
+    border-top: 2px dotted pink;
+    width: auto; 
+}
+.portfolio {
+    justify-content: space-around;
+}
+figure {
+    margin: 30px 0;
+}
+header .hsection {
+    display: flex;
+    padding: 20px;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+
+main {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    display: flex;
+    background-color: lightsalmon;
+    flex-direction: column;
+    width: auto; 
+    align-items: center;
+}
+
+.main-div {
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+    height: auto;
+    justify-content: center;
+}
+figure {
+    flex-direction: column;
+    background-image: radial-gradient(pink, lightblue);
+    padding: 20px;
+    width: 300px;
+    height: auto;
+    border-radius: 10%;
+}
+
+figure .img-portfolio {
+    width: 100%;
+    height: auto;
+    border-radius: 3%;
+    }
+
+h2 {
+    text-align: center;
+    color: #effea8;
+    font-weight: 600;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.main-nav {
+
+    display: flex;
+    margin-top: 0;
+    width: 100%;
+    background-color: #cae6e0;
+    display: flex;
+    color: white;
+    flex-direction: column;
+    text-align: center;
+    box-shadow: 3px 4px 15px 7px lightsteelblue inset;
+}
+
+.second-nav {
+        justify-content: space-between;
+        display: flex;
+        margin-top: 0;
+        width: auto;
+        background-color: #cae6e0;
+        display: flex;
+        color: white;
+        border: 4px ridge lightsteelblue;
+        align-items: center;
+    }
+
+.name {
+    text-align: center;
+    text-shadow: 2px 2px 3px pink;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.sname {
+    text-align: left;
+    text-shadow: 2px 2px 3px pink;
+    margin: 15px 0 15px 5px;
+    font-size: 1rem;
+}
+
+
+.nav {
+    width: 100%;
+    color: gray;
+    text-decoration: none;
+    justify-items: flex-end;
+    text-align: center;
+    margin: 0%;
+    font-size: .6rem;
+}
+
+
+
+li {
+    list-style: none;
+    width: auto;
+    margin: 0;
+    padding: 5px;
+    
+}
+
+.ulnavsec {
+    width: auto;
+    margin: auto;
+    padding: 5px;
+    height: auto;  
+}
+/*
+section {
+    display: flex;
+}
+*/
+.profile {
+    width: 200px;
+    margin: 2px;
+    align-items: center;
+    height: auto;
+    float: right;
+    clear:both;
+  border-radius: 50%;
+  
+}
+
+
+.p-header {
+    color: black;
+    text-align: center;
+    font-weight: 300;
+    font-size: 1.1rem;
+    max-width: 80%;
+    margin-left: 22px;
+    line-height: 30px;
+    text-shadow: 2px 2px 1px white;
+}
+
+a:hover {
+    color: white;
+    text-decoration: underline;
+    font-weight: 400;
+}
+
+a:visited {
+    color: deeppink;
+}
+
+a:link {
+    color: peachpuff;
+    text-decoration: none;
+}
+   
+.snav-links {
+    justify-items: right;
+    display: flex;
+    font-size: .6rem;
+    display: none;
+}
+
+
+footer {
+    text-align: center;
+    color: darkgrey;
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px;
+    box-shadow: 2px 1px 14px 8px gray inset;
+
+}
+
+.pfooter {
+    text-align: center;
+    align-items: center;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+#top {
+    display: none;
+}
+
+.totopfooter {
+    font-size: .6rem;
+    margin: 15px 5px 15px 0;
+    text-decoration: none;
+}
+.lesection {
+    background-color: silver;
+    border: 2px ridge black;
+    width: 100%;
+}
+.le {
+    color: mediumblue;
+    text-decoration: underline;
+}
+.le-img {
+    min-width: 280px;
+    height: auto;
+    border-radius: 0 5% 0 5%;
+    margin: 40px 0;
+}
+.p-le {
+    margin: 15px 0 50px 0;
+}
+/*  ---------- min 768px  --------- */
+
+@media (min-width: 768px) {
+   
+
+    .name {
+        display: inline-block;
+        text-align: center;
+        justify-items: flex-start;
+        margin-bottom: 0;
+        
+    }
+    .nav {
+       display: inline-block;
+       flex-direction: column;
+
+   }
+  .main-nav {
+       display: block;
+       width: 100%;
+      flex-direction: row;
+      text-align: center;
+   }
+
+#top {
+    display: none;
+}
+.ulnavsec {
+    display: flex;
+    justify-content: center;
+}
+header .hsection { 
+align-items: center;
+    flex-direction: row-reverse;
+    justify-content: center;
+     }
+     .snav-links {
+        justify-items: right;
+        display: flex;
+        font-size: .6rem;
+        align-items: center;
+    }
+    
+    .ssection1 {
+        width: 100%;
+        display: flex;
+        justify-content: left;
+    }
+    .totopfooter {
+        display: none;
+    }
+    .portfolio {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+   
+    }
+
+/* ------------ min 1024 ------------- */
+@media (min-width: 1024px) {
+    .main-div {
+
+        justify-content: space-evenly;
+    }
+    .main-nav {
+       display: flex;
+       justify-content: space-between;
+    }
+    .nav {
+        display: flex;
+        justify-items: flex-end;
+        text-align: center;       
+    }
+    .name {
+        margin-left: 10px;
+    }
+    
+
+}
+
+
+
+
+/* 
+
+.main-nav,
+.second-nav {
+
+    display: flex;
+    margin-top: 0;
+    width: 100%;
+    background-color: #cae6e0;
+    color: white;
+}
+
+.name
+.sname {
+    text-align: left;
+    text-shadow: 2px 2px 3px pink;
+    margin-top: 0;
+}
+
+.nav {
+    width: 100%;
+    color: gray;
+    text-decoration: none;
+    justify-items: flex-end;
+    text-align: center;
+    margin: 0%;
+    font-size: .6rem;
+}
+
+.main-div {
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+}
+
+main {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    display: flex;
+    background-color: darksalmon;
+    flex-direction: column;
+    width: auto; 
+}
+
+footer {
+    text-align: center;
+    color: darkgrey;
+    display: flex;
+    flex-direction: column;
+    width: auto;
+}
+
+.sname {
+    text-align: left;
+    text-shadow: 2px 2px 3px pink;
+    margin-top: 0;
+    
+}
+.snav-links {
+    justify-items: right;
+    display: flex;
+    font-size: .6rem;
+}
+
+*/
