@@ -58,7 +58,7 @@ figure {
     background-image: radial-gradient(pink, lightblue);
     padding: 20px;
     width: 300px;
-    height: auto;
+    height: 400px;
     border-radius: 10%;
 }
 
@@ -151,8 +151,6 @@ section {
     margin: 2px;
     align-items: center;
     height: auto;
-    float: right;
-    clear:both;
   border-radius: 50%;
   
 }
@@ -180,7 +178,7 @@ a:visited {
 }
 
 a:link {
-    color: peachpuff;
+    color:midnightblue;
     text-decoration: none;
 }
    
